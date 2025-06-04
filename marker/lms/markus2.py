@@ -195,9 +195,9 @@ class Markus2(LMS):
 
         url = f'{self.base_url}/api/courses/{self.course_id}/assignments/{self.assgn_id}/groups/{group_id}/submission_files.json'
         
-        collected = True
+        collected = "True"
         if self.cfg["allow_late"]:
-            collected = False
+            collected = ""
 
         if 'file_names' in self.cfg:
             for fname in self.cfg['file_names']:
